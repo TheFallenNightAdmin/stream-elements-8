@@ -166,7 +166,7 @@
 <script>
   async function fetchMemberCount() {
     try {
-      const res = await fetch('/api/discord-members');
+      const res = await fetch('/api/discord');
       const data = await res.json();
       const count = data.members;
       document.getElementById('memberCount').textContent = count.toLocaleString();
